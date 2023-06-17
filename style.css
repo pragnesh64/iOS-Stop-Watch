@@ -1,0 +1,25 @@
+body {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.timer-container {
+    background-color: #333333;
+    border: 5px solid #777777;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 80px;
+    margin: 0;
+    letter-spacing: 4px;
+    font-family: "Arial", sans-serif;
+}
