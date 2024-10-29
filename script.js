@@ -52,6 +52,7 @@ function clockRunning() {
   var currentTime = new Date();
   var timeElapsed = new Date(currentTime - timeBegan - stoppedDuration);
 
+  var hours = timeElapsed.getUTCHours();
   var minutes = timeElapsed.getUTCMinutes();
   var seconds = timeElapsed.getUTCSeconds();
   var milliseconds = timeElapsed.getUTCMilliseconds();
@@ -59,9 +60,9 @@ function clockRunning() {
   milliseconds = Math.floor(milliseconds / 10);
 
   timerDisplay.innerHTML =
+    (hours < 10 ? '0' + hours : hours) + ":" +
     (minutes < 10 ? '0' + minutes : minutes) + ":" +
-    (seconds < 10 ? '0' + seconds : seconds) + ":" +
-    (milliseconds < 10 ? '0' + milliseconds : milliseconds);
+    (seconds < 10 ? '0' + seconds : seconds);
 }
 
 function displayRecords() {
